@@ -1,6 +1,6 @@
-# Build Your Own MCP Server & Client (STDIO + Gemini)
+# End-to-End MCP Tooling System with Vertex AI Gemini
 
-This repository demonstrates how to **build a complete Model Context Protocol (MCP) system from scratch**, including:
+This repository demonstrates how to **Build an End-to-End MCP Tooling System with Vertex AI Gemini**, including:
 
 - An **MCP server** exposing tools using FastMCP
 - An **MCP client** that launches the server and communicates via **JSON-RPC 2.0 over STDIO**
