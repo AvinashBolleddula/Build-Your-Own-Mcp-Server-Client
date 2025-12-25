@@ -1,13 +1,14 @@
 # End-to-End MCP Tooling System with Vertex AI Gemini
 
-This repository demonstrates how to **Build an End-to-End MCP Tooling System with Vertex AI Gemini**, including:
+This repository showcases an **end-to-end implementation of the Model Context Protocol (MCP)**, demonstrating how to build a **production-aligned MCP server and client** that communicate via **JSON-RPC 2.0 over STDIO** and leverage **Vertex AI Gemini** for intelligent tool orchestration.
 
-- An **MCP server** exposing tools using FastMCP
-- An **MCP client** that launches the server and communicates via **JSON-RPC 2.0 over STDIO**
-- Integration with **Vertex AI Gemini** for reasoning and tool orchestration
-- A correct **multi-step tool chaining loop** (not limited to single-round tool calls)
+The system includes:
+- An **MCP server** built using **FastMCP**, exposing structured tools
+- An **MCP client** that launches the server as a subprocess and interacts with it over STDIO
+- **LLM-driven tool discovery, execution, and multi-step tool chaining**
+- Secure, cloud-native integration with **Vertex AI Gemini** using IAM-based authentication
 
-This project is **production-aligned, and fully runnable locally**.
+This project emphasizes **protocol correctness, async-safe system design, and real-world LLM tool orchestration patterns**, making it suitable a production-quality foundation for MCP-based agent systems.
 
 ---
 ## 🏗️ Architecture Diagram
@@ -69,7 +70,7 @@ sequenceDiagram
 
 ## 📁 Project Structure
 ```text
-End-to-End MCP Tooling System with Vertex AI Gemini/
+End-to-End-MCP-Tooling-System-with-Vertex-AI-Gemini/
 ├── weather/
 │   ├── weather.py        # MCP server: FastMCP runtime + weather tools
 │   ├── client.py         # MCP client: Gemini reasoning + tool loop
